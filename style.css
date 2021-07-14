@@ -1,94 +1,92 @@
-html, body{
-    margin:0;
-    height: 100%;
-    background-color:rgb(229, 185, 255);
-    font-family:'Oswald', sans-serif ;
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: rgb(229, 185, 255);
+  font-family: "Oswald", sans-serif;
 }
-h1{
-    text-align: center;
-}
-
-.flex-wrapper{
-    display: flex;
-    flex-flow:column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.add-todo-wrapper{
-    display: flex;
-    width: 500px;
-    min-height: 40px;
-    align-items: center;
-    background-color: rgb(149, 62, 231);
-    border-radius: 5px;
-    padding: 10px;
-}
-.input-wrapper{
-    width: 80%;
-}
-.input-wrapper input{
-    width: 100%;
-    height: 25px;
-}
-.button-wrapper{
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
+h1 {
+  text-align: center;
 }
 
-.button-wrapper button{
-    width: 80%;
-    background-color: rgb(137, 129, 250);
-    color:#ffffff;
-    outline: none;
-    border: none;
-    height: 25px;
-    cursor:  pointer;
+.flex-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.add-todo-wrapper {
+  display: flex;
+  width: 500px;
+  min-height: 40px;
+  align-items: center;
+  background-color: rgb(149, 62, 231);
+  border-radius: 5px;
+  padding: 10px;
+}
+.input-wrapper {
+  width: 80%;
+}
+.input-wrapper input {
+  width: 100%;
+  height: 25px;
+}
+.button-wrapper {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-
-.todo-item{
-    display: flex;
-    width:500px;
-    min-height: 50px;
-    border:0,5px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: hsla(337, 100%, 50%, 0.712);
-   flex-direction: row;
-    text-align:center; 
-    align-items: center;
+.button-wrapper button {
+  width: 80%;
+  background-color: rgb(137, 129, 250);
+  color: #ffffff;
+  outline: none;
+  border: none;
+  height: 25px;
+  cursor: pointer;
 }
 
-.todos-wrapper span{
-    width: 120%;
-    align-items: center;
-    color: rgb(250, 250, 250);
+.todo-item {
+  display: flex;
+  width: 500px;
+  min-height: 50px;
+  border: 0, 5px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: hsla(337, 100%, 50%, 0.712);
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.todos-wrapper span {
+  width: 120%;
+  align-items: center;
+  color: rgb(250, 250, 250);
 }
 .todo {
-    top: 4px;
-    width: 23px;
-    height: 22px;
-    border-radius: 1px;
-    border-left: 4px solid #e145a3;
-    border-bottom: 4px solid #e145a3;
-    
-   
+  top: 4px;
+  width: 23px;
+  height: 22px;
+  border-radius: 1px;
+  border-left: 4px solid #e145a3;
+  border-bottom: 4px solid #e145a3;
 }
 
-.delete-button{
-    outline: none;
-    border:none ;
-    background-color: rgba(220, 20, 60, 0.746);
-    color: #ffffff;
-    cursor: pointer;
-    height: 35px;
-    border-radius: 5px;
-    width:150px ;
-  
+.delete-button {
+  outline: none;
+  border: none;
+  background-color: rgba(220, 20, 60, 0.746);
+  color: #ffffff;
+  cursor: pointer;
+  height: 35px;
+  border-radius: 5px;
+  width: 150px;
 }
-
-
-
+.grey {
+  background-color: gray;
+  opacity: 0.5;
+}

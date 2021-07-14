@@ -12,16 +12,20 @@ let guid = () => {
 $(document).on('click', '#add-task-btn',function() {
    let value = $('#description-task').val();
    Tasks.push({value:value, completed:false, id: guid()});
+   $('#description-task').val('');
    render();
  
 })
 
  function render(){
+
     let string=`` 
      Tasks.forEach((task)=>{
+        let isGrey= task.completed ? 'grey' : null;
+        let isChecked=task.completed ? 'checked' : null;
         string+=`
-        <div class="todo-item"> 
-        <input type="checkbox" class="complete-checkbox" id="${task.id}"/>
+        <div class="todo-item  ${isGrey}" id="todo-${task.id}"> 
+        <input type="checkbox" class="complete-checkbox" id="${task.id}" ${isChecked}/>
         <span>
         ${task.value}
         </span>
@@ -35,9 +39,17 @@ $(document).on('click', '#add-task-btn',function() {
  
  $(document).on('click', '.complete-checkbox',function() {
     const id=$(this).attr('id');
+    
 Tasks.forEach((task)=>{
-if (task.id===id){
+   if (task.id===id){
 task.completed=!task.completed
+   if(task.completed){
+    $(`#todo-${id}`).addClass('grey')
+   }
+   else{
+      $(`#todo-${id}`).removeClass('grey')
+
+   }
 }
 })
 console.log(Tasks);
