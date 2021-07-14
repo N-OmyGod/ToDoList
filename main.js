@@ -20,7 +20,7 @@ $(document).on('click', '#add-task-btn',function() {
      Tasks.forEach((task)=>{
         string+=`
         <div> 
-        <input type="checkbox" id=${task.id}/>
+        <input type="checkbox" class="complete-checkbox" id=${task.id}/>
         <span>
         ${task.value}
         </span>
@@ -31,3 +31,18 @@ $(document).on('click', '#add-task-btn',function() {
  $('.todos-wrapper').html(string);
  }
 
+ 
+ $(document).on('click', '.complete-checkbox',function() {
+    const id=$(this).attr('completed');
+    this.completed=!this.completed
+     for(let i=0; i<Tasks.length; i++){
+         if(this.id==Tasks[i].id){
+            Tasks[i].completed= !Tasks[i].completed;
+            console.log(Tasks[i].completed);
+         }
+     }
+
+console.log(Tasks);
+  
+ })
+ 
