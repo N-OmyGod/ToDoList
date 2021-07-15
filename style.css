@@ -90,3 +90,37 @@ h1 {
   background-color: gray;
   opacity: 0.5;
 }
+#all-btn {
+  outline: none;
+  border: none;
+  background-color: rgba(50, 220, 20, 0.746);
+  color: #ffffff;
+  cursor: pointer;
+  height: 35px;
+  border-radius: 5px;
+  width: 150px;
+}
+
+#completed-btn {
+  outline: none;
+  border: none;
+  background-color: rgba(235, 44, 44, 0.746);
+  color: #ffffff;
+  cursor: pointer;
+  height: 35px;
+  border-radius: 5px;
+  width: 150px;
+}
+#uncompleted-btn {
+  outline: none;
+  border: none;
+  background-color: rgba(235, 44, 44, 0.746);
+  color: #ffffff;
+  cursor: pointer;
+  height: 35px;
+  border-radius: 5px;
+  width: 150px;
+}
+.active {
+  background-color: rgba(50, 220, 20, 0.746);
+}
