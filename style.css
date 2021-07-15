@@ -93,7 +93,7 @@ h1 {
 #all-btn {
   outline: none;
   border: none;
-  background-color: rgba(50, 220, 20, 0.746);
+  background-color: red;
   color: #ffffff;
   cursor: pointer;
   height: 35px;
@@ -104,17 +104,18 @@ h1 {
 #completed-btn {
   outline: none;
   border: none;
-  background-color: rgba(235, 44, 44, 0.746);
+
   color: #ffffff;
   cursor: pointer;
   height: 35px;
   border-radius: 5px;
   width: 150px;
+  background-color: red;
 }
 #uncompleted-btn {
   outline: none;
   border: none;
-  background-color: rgba(235, 44, 44, 0.746);
+  background-color: red;
   color: #ffffff;
   cursor: pointer;
   height: 35px;
@@ -122,5 +123,5 @@ h1 {
   width: 150px;
 }
 .active {
-  background-color: rgba(50, 220, 20, 0.746);
+  background-color: rgba(50, 220, 20, 0.746) !important;
 }

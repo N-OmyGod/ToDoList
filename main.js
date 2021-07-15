@@ -113,18 +113,24 @@ console.log(Tasks);
 
 
  $(document).on('click', '#all-btn',function() {
+   $( '#completed-btn').removeClass('active');
+   $( '#uncompleted-btn').removeClass('active');
+   $( '#all-btn').addClass('active');
+  
    render();
 })
 $(document).on('click', '#completed-btn',function() {
    $( '#completed-btn').addClass('active');
    $( '#uncompleted-btn').removeClass('active');
    $( '#all-btn').removeClass('active');
+ 
    Completedrender();  
 })
 $(document).on('click', '#uncompleted-btn',function() {
    $( '#uncompleted-btn').addClass('active');
    $( '#completed-btn').removeClass('active');
    $( '#all-btn').removeClass('active');
+  
    UnCompletedrender();
 
 })
